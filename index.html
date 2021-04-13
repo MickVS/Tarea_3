@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ejemplos - Bootstrap 5</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            .bd-placeholder-img {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              user-select: none;
+            }
+      
+            @media (min-width: 768px) {
+              .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+              }
+            }
+
+            .f{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+        </style>      
+          
+        <link href="css/navbar.css" rel="stylesheet">
+        <link href="css/grid.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="#">
+                <img class="d-inline-block align-top" src="assets/bootstrap-logo-white.svg" alt="Bootstrap" loading="lazy" width="38" height="30">
+              </a>
+              
+              <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contenido.html">Contenido</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="formulario.html">Formulario</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="componente.html">Componente</a>
+                  </li>                  
+                </ul>
+                <form>
+                  <input class="form-control" type="text" placeholder="Buscar..." aria-label="Search">
+                </form>
+              </div>
+            </div>
+        </nav>
+
+        <div class="container py-3">
+
+            <main> 
+
+                <div class="container">
+
+                    <h1>Ejemplos del sistema Grid de Bootstrap</h1>
+                    <p class="lead">Estos son algunos arreglos básicos proporcionados por Bootstrap 5.</p>       
+
+                    <h2 class="mt-4">Tres columnas del mismo ancho</h2>
+                    <p>Consiga tres columnas de igual ancho <strong>con escala de desktops hasta large
+                    desktops</strong>. En dispositivos móviles y tabletas, las columnas se volverán una
+                    pila de forma automática.</p>
+                    <div class="row mb-3">
+                    <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                    <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                    <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                    </div>
+
+                    <h2 class="mt-4">Alternativa para tres columnas del mismo ancho</h2>
+                    <p>Usando las clases <code>.row-cols-*</code>, es posible crear un grid de tres columnas
+                    del mismo ancho de una manera más sencilla.</p>
+                    <div class="row row-cols-md-3 mb-3">
+                    <div class="col themed-grid-col"><code>.col</code> hija de <code>.row-cols-md-3</code></div>
+                    <div class="col themed-grid-col"><code>.col</code> hija de <code>.row-cols-md-3</code></div>
+                    <div class="col themed-grid-col"><code>.col</code> hija de <code>.row-cols-md-3</code></div>
+                    </div>
+
+                    <h2 class="mt-4">Tres columnas con anchos variables</h2>
+                    <p>Consiga tres columnas de ancho variable <strong>con escala de desktops hasta large
+                    desktops</strong>. Recuerde, las columnas de un grid siempre deben ser como máximo 12.
+                    Más que esto, y las columnas empezarán a apilarse sin importar el viewport.</p>
+                    <div class="row mb-3">
+                    <div class="col-md-3 themed-grid-col">.col-md-3</div>
+                    <div class="col-md-6 themed-grid-col">.col-md-6</div>
+                    <div class="col-md-3 themed-grid-col">.col-md-3</div>
+                    </div>
+
+                    <h2 class="mt-4">Dos columnas con anchos variables</h2>
+                    <p>Consiga dos columnas <strong>con escala de desktops hasta large desktops</strong>.</p>
+                    <div class="row mb-3">
+                    <div class="col-md-8 themed-grid-col">.col-md-8</div>
+                    <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                    </div> 
+
+                    <hr class="my-4">
+
+                    <h2 class="mt-4">Dos columnas con indentación</h2>
+                    <p>Indentar es sencillo, solo debe colocar una fila de columnas dentro de otra columna.
+                    Esto le da dos columnas <strong>con escala de desktops hasta large desktops</strong>,
+                    con otras dos columnas (de anchos iguales) dentro de la primera.</p>
+                    <p>En dispositivos móviles y tabletas, las columnas principales y las internas se apilarán.</p>
+                    <div class="row mb-3">
+                    <div class="col-md-8 themed-grid-col">
+                        <div class="pb-3">
+                        .col-md-8
+                        </div>
+                        <div class="row">
+                        <div class="col-md-6 themed-grid-col">.col-md-6</div>
+                        <div class="col-md-6 themed-grid-col">.col-md-6</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 themed-grid-col">.col-md-4</div>
+                    </div>                
+
+                </div>
+
+            </main>        
+
+        </div>
+
+        <footer class="text-muted py-5; f" style="background-color:black">
+            <div class="container">
+                <p class="float-end mb-1">
+                <a href="#">Volver al principio</a>
+                </p>
+                <p class="mb-1">Elaborado por Miguel Sánchez con &copy; Bootstrap 5.</p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
